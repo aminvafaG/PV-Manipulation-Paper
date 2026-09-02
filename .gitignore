@@ -1,0 +1,14 @@
+# Build artefacts written by the app at run time -----------------------------
+# Per-unit metrics are cached next to main.m so the ~6 s model fitting only runs
+# when the data or the analysis code changes. Safe to delete; it rebuilds itself.
+metrics_cache.mat
+
+# The visualizer remembers its session (open tab, filters, presets) between runs.
+viz_state.mat
+*_state.mat
+
+# MATLAB odds and ends
+*.asv
+*.autosave
+slprj/
+.matlab_prefs/
